@@ -12,7 +12,7 @@ use willphp\config\Config;
 class Base {
 	protected $secureKey = 'd0456cc4eb4eec479dba0ceefa6488c143a03299a3c3fed3d8ce7b820f3aca81';
     /**
-     * ÉèÖÃÃÜÔ¿
+     * è®¾ç½®å¯†é’¥
      * @param string $key
      * @return string
      */
@@ -21,9 +21,9 @@ class Base {
 		return base64_decode(hash('sha256', $this->secureKey, true));
 	}
     /**
-     * ¼ÓÃÜ
-     * @param string $input     ¼ÓÃÜ×Ö·û
-     * @param string $secureKey ¼ÓÃÜkey
+     * åŠ å¯†
+     * @param string $input     åŠ å¯†å­—ç¬¦
+     * @param string $secureKey åŠ å¯†key
      * @return string
      */
 	public function encrypt($input, $secureKey = '') {
@@ -37,9 +37,9 @@ class Base {
 		return base64_encode($encrypt);
 	}
     /**
-     * ½âÃÜ
-     * @param string $input     ½âÃÜ×Ö·û
-     * @param string $secureKey ¼ÓÃÜkey
+     * è§£å¯†
+     * @param string $input     è§£å¯†å­—ç¬¦
+     * @param string $secureKey åŠ å¯†key
      * @return string
      */
 	public function decrypt($input, $secureKey = '') {

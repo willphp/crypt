@@ -10,7 +10,7 @@
 namespace willphp\crypt;
 use willphp\framework\build\Provider;
 class CryptProvider extends Provider {
-	public $defer = false; //ясЁы╪сть
+	public $defer = false; //Е╩╤Х©÷Е┼═Х╫╫
 	public function boot() {		
 
 	}
